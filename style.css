@@ -1,539 +1,324 @@
-@charset "UTF-8";
-@import url(local.google.fonts.css);
-@import url(icontfont.css);
-/*@import url("https://fonts.lug.ustc.edu.cn/css?family=Vollkorn");*/
-@font-face {
-  font-family: 'Chancery';
-  src: url("fonts/chancery/apple-chancery-webfont.eot");
-  src: local("Apple Chancery"), url("fonts/chancery/apple-chancery-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/chancery/apple-chancery-webfont.woff2") format("woff2"), url("fonts/chancery/apple-chancery-webfont.woff") format("woff"), url("fonts/chancery/apple-chancery-webfont.ttf") format("truetype"), url("fonts/chancery/apple-chancery-webfont.svg#apple-chancery") format("svg");
-  font-weight: lighter;
-  font-style: normal; }
-
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-
-/**
- * Remove default margin.
- */
+*{margin:0; padding:0;}
 
 
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+.CERVENA {
+	font-size: 100%;
+	font-style: normal;
+	color: #F30;
+}
 
-
-
-
-
-/* Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-td,
-th {
-  padding: 0; }
-
-html {
-  font-size: 16px;
-  box-sizing: border-box; }
 
 body {
-  padding: 0;
-  margin: 5px;
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #34495e;
-  background: #f6f7f9;
-  scroll-behavior: smooth; 
-
-  background: linear-gradient(rgba(255,255,255,0.3),rgba(245,245,245,0.9)), 
-  /*url("image/night-right.jpg");*/
-  /*url("image/moss.png");*/
-  url("image/fireworks.jpg");
-  background-position: right top;
-  background-repeat: repeat;
-  opacity: 1; 
-  background-size: 50%;
-  background-color: #f5f7f9;
-  background-attachment: fixed;
+font-family: Georgia;
+font-size: 17px;
+background: #ffffff;
+color: #333;
+Margin:10px;
+padding:0px;
+line-height: 135%;
 }
 
 
-
-.container {
-  border: 1px solid #BBB;
-  border-radius: 20px;
-  box-shadow: 1px 1px 10px #BBB;
-  font-family: 'Lato', sans-serif;
-  background: white; 
-  margin: 0 auto;
-  position: relative;
-  width: 960px; 
-
-
-  background-image: url("../photo/background_shallow.jpg");
-  background-repeat: no-repeat;
-  background-size: 320px;
-  background-position: right bottom;
-
-}
-
-section {
-  margin: 0 auto;
-  position: relative;
-  width: 900px; 
-}
-
-body {
-  /*-webkit-font-smoothing: subpixel-antialiased; */
+p
+{
+padding:0.2cm 0cm 0.2cm 0cm;
 }
 
 
-/*@import url(http://fonts.lug.ustc.edu.cn/css?family=Lato:100,300,400,300italic|Vollkorn:400italic,400);*/
-/*老式对齐*/
-/*.basic-info {
-  position: absolute;
-  right: 40px;
-  top: 0px;
-  color: #555;
-  text-align: right; }
-  .basic-info name {
-    display: block;
-    font-family: "Chancery", cursive, LiSu, sans-serif;
-    margin: 10px 0 10px 0;
-    font-size: 2em;
-    font-weight: bold; }
-    .basic-info name span {
-      display: inline-block;
-      width: 180px;
-      position: relative;
-      top: -3px;
-      margin-left: 8px;
-      border-bottom: 5px solid #555; }
-  .basic-info p, .basic-info span {
-    font-family: 'Vollkorn', serif;
-    font-style: italic;
-    margin: 0px; }
-    .basic-info p B, .basic-info span B {
-      font-style: normal;
-      font-family: Helvetica; }*/
+a { color: #336699; text-decoration: none; }
+a:hover { text-decoration: none; color : #880000; }
 
-.basic-info {
-  position: absolute;
-  left: 300px;
-  top: 90px;
-  color: #555;
-  text-align: left; }
-name {
-    position: absolute;
-    left: 80px;
-    display: block;
-    font-family: "Chancery", cursive, LiSu, sans-serif;
-    margin: 30px 0 10px 0;
-    font-size: 2em;
-    font-weight: bold; }
-name span {
-    display: inline-block;
-    width: 200px;
-    position: relative;
-    top: -3px;
-    margin-left: 8px;
-    border-bottom: 5px solid #555; 
-}
-.basic-info p, .basic-info span {
-  /*font-family: 'Vollkorn', lato;*/
-  font-family: Helvetica;
-  font-size: 19px;
-  /*font-style: italic;*/
-  margin: 6px 0;
-}
-.basic-info p B, .basic-info span B {
-  font-style: normal;
-  font-family: Helvetica; }
-.basic-info .contact {
-  font-family: 'Vollkorn', lato;
+img { border:none; padding: 0; vertical-align:middle;}
+img a {border:none; }
+
+ul { list-style-type: none; }
+
+#page {
+	background: #fff;
 }
 
-.envelope:before {
-  content: "\e605"; }
-
-
-
-.photo {
-    position: absolute;
-    left: 100px;
-    top: 90px;
-    color: #555;
-    text-align: right;
-}
-.photo img {
-  height: 210px;
+.main{
+	width: 1000px;
+	margin: 0 auto;
 }
 
 
-.home-page {
-  /*放大图*/
-  /*background-image: url("photo/seame.jpg");
-  background-position: 0px -60px; 
-  background-size: cover;*/
-  height: 320px;
-  width: 960px; 
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+#header {
+height: 220px;
+position: relative;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle; 
-}
-a {
-    color: #c05b4d;
-    text-decoration: none;
+#header h1{
+padding-top: 0px;
+padding-bottom: 5px;
+font-size: 30px;
+font-weight: 400;
 }
 
-
-h1 {
-  /*text-transform: uppercase;
-  font-size: 22px;
-  margin-bottom: -8px;
-  border-top: 3px solid #555;*/
-
-  /*color: #268bd2;*/
-  color: #555;
-
-  margin-top: 30px;
-  margin-bottom: 0px;
-  /*margin-bottom: -30px;*/
-  /*margin-top: 50px;*/
-  text-transform: uppercase;
-  font-size: 24px;
-  padding-left: 98px;
-  border-top: 5px dotted #555;
-
+#header h2{
+font-weight: 100;
+margin-top: 10px;
+font-size: 18px;
 }
 
-h1 span {
-    /*position: relative;
-    top: -13px;
-    background-color: white;
-    padding-right: 5px;*/
-
-    position: relative;
-    top: -20px;
-    /*background-color: #f6f7f9;*/
-    background-color: white;
-    padding-right: 8px;
-    padding-left: 8px;
+#header h3{
+	position: absolute;
+	right: 0;
+	top: 0.3cm;
+	background: #ccc;
+	font-weight: 100;
+	color: #fff;
+	padding: 15px;
+	border-radius:5px;
+	margin-top: 12px;
+	font-size: 15px;
 }
 
-.resume {
-    position: absolute;
-    right: 40px;
-    bottom: -30px;
-    color: #555;
-    font-family: 'Vollkorn', serif;
-    /*font-style: italic;*/
-    margin: 0px;
-    font-size: 22px;
-    font-weight: bold;
+#header h1 a {
+color: #336699;
 }
 
-.experiences {
-  font-weight: 300;
+#header h1 a:hover {
+color: #111;
 }
 
-.experiences table{
-  margin: auto;
+#menu h2 {
+text-align:right;
+color: #aaa;
+font-size: 13px;
+font-weight: 600;
+padding-right: 30px;
 }
 
-.experiences .logo {
-  width: 280px;
-  text-align: center;
+#publicLecture {
+text-align:center;
+margin-top: 12px;
 }
 
-.experiences tr {
-  display: block;
-  margin-bottom: 10px;
+#menu {
+background: #000;
+height: 20px;
 }
 
-.experiences tr:hover{
-  transform: translate(0px, -2px);
-  box-shadow: 0 15px 45px -10px rgba(10, 16, 34, .2);
+#menu ul {
+list-style-type: none;
+margin: 0;
+padding-left: 30px;
 }
 
-.experiences .education .des {
-  width: 580px;
+#menu ul li {
+display: block;
+float: left;
 }
 
-.experiences .internship .des {
-  width: 580px;
+#menu ul li a {
+display: block;
+padding: 0 5px 0 5px;
+text-decoration: none;
+color: #aaa;
+font-size: 13px;
+font-weight: 200;
 }
 
-.experiences .des {
-  color: #555;
+#menu ul li a:hover {
+color: #fff;
 }
 
-.experiences .des .name {
-  font-family: lato,sans-serif;
-  font-weight: 500;
-  color: #444;
-  font-size: 19px;
-  padding-bottom: 5px;
+#wrapper {
+background: url(imgs/shad.jpg) no-repeat top;
 }
 
-.experiences .des .date {
-  font-family: lato,sans-serif;
-  padding-bottom: 5px;
-  font-weight: 500;
-  color: #777;
-  /*font-size: 20px;*/
+#content {
+float: left;
+width: 900px;
+margin: 20px 0;
 }
 
-.experiences .middle {
-  width: 2%;
+#sidebar {
+float: right;
+width: 210px;
+margin: 20px 0px;
+padding-left: 5px;
+border-left: 1px solid #e2e2e2;
 }
 
-
-paper {
-  font-family: 'Roboto', Helvetica, Arial, serif;
-  position: relative;
-  /*height: 300px;*/
-  display: flex;
-  margin: auto;
-  margin-bottom: 30px;
-  padding: 10px;
-  width: 95%;
-
-  align-items:center;
+#footer {
+margin: 0 0;
+font-weight: 100;
+font-size: 12px;
+text-align: center;
+color: #666;
+height: 300px;
+line-height: 50px;
 }
 
-/*
-Hover style learned from:  https://github.com/artemsheludko/flexible-jekyll
-An example: https://liu-xb.github.io/;
-*/
-paper:hover {
-  transform: translate(0px, -2px);
-  box-shadow: 0 15px 45px -10px rgba(10, 16, 34, .2);
+#footer p { color: #aaa; }
+#footer a { color: #aaa; text-decoration: none; }
+#footer a:hover { text-decoration: underline; }
+
+
+#content h1 {
+font-size: 20px;
+font-weight: 500;
+color:rgb(204, 102, 0)	;
+padding-top: 16px;
+padding-bottom: 16px;
 }
 
-paper:after {
-  content: "";
-  position: absolute;
-  left:0%;
-  bottom:-15px;
-  width: 100%;
-  border-top: 1px dotted #555;
+#content h2 {
+font-size: 18px;
+font-weight: 300;
+color:rgb(204, 102, 0)	;
+margin: 16px 0px 16px 0px;
+padding: 0 0 0px;
 }
 
-paper#last:after {
-  all: unset; 
+#content h3 {
+font-weight: 100;
+font-size: 14px;
+margin: 0px 0; padding: 3px 10px 3px 0px;
+color: #666;
 }
 
-paper img {
-  float:left;
-  margin-right:3%;
-  width: 49%;
-}
-paper .des {
-    display: block;
-    width: 55%;
-}
-paper .pub_title {
-  font-family: 'Roboto', Helvetica, Arial, serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #111;
+#content h4 {
+font-weight: 100;
+font-size: 12px;
+color: #666;
+padding-left: 0px;
 }
 
-paper .pub_authors {
-  font-family: 'Roboto', Helvetica, Arial, serif;
-  font-size: 13px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  color: #133d67;
+#content h5 {
+font-weight: 100;
+font-size: 10px;
+color: #666;
+padding-left: 0px;
 }
 
-paper .label-default {
-    background-color: #bdbbbb;
-    /*display: inline;*/
-    display:  inline-block;
-    padding: .2em .6em .3em .6em;
-    margin-bottom: .2em;
-    font-size: 90%;
-    font-weight: bold;
-    line-height: 1.1;
-    color: #ffffff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25em;
+#content h6 {
+font-weight: 100;
+font-size: 8px;
+color: #666;
+padding-left: 0px;
 }
 
-paper .pub_type {
-    font-weight: 300;
-    color: #5F5F5F;
-    padding-bottom: 8px;
-    /*font-size: 14px;*/
+#content img {
+margin: 0px;
+padding: 0 10px 10px 0;
 }
 
-paper .pub_highlight {
-    font-weight: bold;
-    background-color: #f5a24c;
-    font-size: 90%;
-    line-height: 1.2;
-    color: #ffffff;
-    display: inline;
-    padding: .2em .6em .3em;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25em;
+#content ol {
+color: #555555;
+margin: 0px;
+padding: 10px 20px ;
+}
 
+#content ol li {
+padding: 3px 0px;
+}
+
+#content ul {
+color: #555555;
+margin: 0px;
+padding: 10px 20px ;
 }
 
 
-.award table {
-    /*position: absolute;*/
-    left: 30px;
-    top: 30px;
-    margin-bottom: 15px;
-    width:100%;
-}
-.award table td{
-    padding-left: 10px;
-    padding-bottom: 8px;
-    font-weight: 300;
-    vertical-align: top;
-    font-size: 17px;
+#content ul li {
+list-style-type: square;
+padding: 3px 0px;
 }
 
-.award tr:hover{
-  transform: translate(0px, -2px);
-  box-shadow: 0 15px 45px -10px rgba(10, 16, 34, .2);
+#sidebar ul {
+    list-style-type: none;
 }
 
-
-
-.footer .copyright {
-    margin: 10px 0;
-    color: #8a8a8a;
-    text-align: center;
-    font-family: "Lato", sans-serif; 
-  }
-
-
-
-  /*.content {
-  font-family: 'Roboto', Helvetica, Arial, serif;
-}*/
-
-.content .name {
-  margin-bottom: 10px;
-  font-family: "lato";
-  /*font-weight: bold;*/
-  font-size: 120%;
+#sidebar p {
+  padding: 0 20px 20px 20px;
+  text-align:justify;
 }
 
+#sidebar h2 {
+    height: 40px;
+    line-height: 40px;
+    margin: 0; padding: 0;
+    text-align:center;
 
-.project .intro::before{
-  /*font-family: "lato";*/
-  content: "项目内容：";
-  font-weight: bold;
+font-weight: 100;
+font-size: 14px;
+margin: 0px 0;
+color: #666;
+}
+
+#sidebar h6 {
+font-weight: 100;
+font-size: 10px;
+margin: 0px 0;
+color: #666;
+}
+
+#sidebar ul li {
 
 }
 
-.project .responsibility::before{
-  /*font-family: "lato";*/
-  content: "本人工作：";
-  font-weight: bold;
+#sidebar ul {
+padding: 10px 0 5px 20px;
 }
 
-.project .work::before{
-  /*font-family: "lato";*/
-  content: "工作内容：";
-  font-weight: bold;
+#sidebar ul li {
+    padding: 2px 0 2px 22px;
+}
+#sidebar ul li a { font-size: 13px; }
 
+:required
+{
+    background-color: red;
 }
 
-.project .achievement::before{
-  /*font-family: "lato";*/
-  content: "主要成果：";
-  font-weight: bold;
+
+li{
+    margin: -3px 0;
 }
 
-.project .intro, .responsibility, .work,  .achievement{
-  position: relative;
-  margin: 5px 0;
-  font-weight: 300;
-  text-align: justify;
-  /*padding-bottom: 5px;*/
-  /*left: 10px;*/
+
+.menu li{
+	display: inline-block;
 }
 
-.content  table {
-    /*position: relative;*/
-    left: 30px;
-    right: 30px;
-    top: 30px;
-    margin-bottom: 15px;
-    
-    
-}
-.content  table td{
-    padding-bottom: 8px;
-    font-weight: normal;
-    vertical-align: top;
-    font-size: 17px;
+.menu a.active{
+	border: 2px solid #e2e2e2;
+	border-bottom: 2px solid #fff;
+	margin-bottom: -2px;
+	color:rgb(204, 102, 0) ;
 }
 
-.content table .table_date {
-  text-align: right;
+.menu a:hover{
+	color: rgb(204, 102, 0);
+}
+.menu a{
+	color: rgb(51,51,51);
+	display: block;
+	padding: 6px 15px ;
+	height: 20px;
+	line-height: 20px;
+}
+.menu{
+	text-align: left;
+	border-bottom: 2px solid #e2e2e2;
 }
 
-.content table .table_desc {
-  padding-left: 20px;
+.menu li,
+.menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
-.project  table .table_date {
-    width: 150px;
-    padding-top: 3px;
+.important{
+	color:rgb(247, 148, 29)	;
 }
 
-.award  table .table_date {
-    width: 100px;
-    /*padding-top: 3px;*/
+g_right{float: right;}
+g_left{	float: left;
 }
-
-.award, .skill, .work{
-  font-family: lato;
-}
-
-.work  table .table_date {
-    width: 144px;
-    /*padding-top: 3px;*/
-}
-
-.skill table .table_date {
-  width: 150px;
-}
-
-.skill table .table_desc {
-  width: 380px;
+g_clear{clear: both;
 }
