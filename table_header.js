@@ -1,8 +1,8 @@
 document.write("<table width=\"850\" border=\"0\" height=\"184\">");
 document.write("<tbody>");
 document.write("<tr>");
-document.write("<td> <img src=\"Images\/wei_chen.jpg\" alt=\"Wei Chen\"");
-document.write("width=\"150\" height=\"200\"> <\/td>");
+document.write("<td> <img src=\"Images\/weichen_cartoon.png\" alt=\"Wei Chen\"");
+document.write("width=\"200\" height=\"200\"> <\/td>");
 document.write("<td>");
 document.write("<h1>Wei Chen</h1>");
 document.write("<br>");
