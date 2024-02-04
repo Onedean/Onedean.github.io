@@ -20,7 +20,7 @@ document.write("<br>");
 document.write("&nbsp;");
 document.write("<a href=\"https:\/\/scholar.google.com\/citations?user=RCfQIcQAAAAJ&hl\"><img src=\"Images\/scholar.png\" alt=\"Google Scholar\" width=\"25\" border=\"0\" height=\"25\"> Google Scholar <\/a> &nbsp;");
 document.write("<a href=\"https:\/\/github.com\/onedean\"><img src=\"Images\/GitHub-Mark-120px-plus.png\" alt=\"GitHub\" width=\"25\" border=\"0\" height=\"25\"> Github <\/a> &nbsp;");
-document.write("<a href=\"doc\/CV-WeiChen.pdf\"><img src=\"Images\/cv.png\" alt=\"CV\" width=\"25\" border=\"0\" height=\"25\"> CV <\/a> &nbsp;");
+// document.write("<a href=\"doc\/CV-WeiChen.pdf\"><img src=\"Images\/cv.png\" alt=\"CV\" width=\"25\" border=\"0\" height=\"25\"> CV <\/a> &nbsp;");
 // document.write("<a href=\"https:\/\/www.zhihu.com\/people\/its312\/posts\"> <img src=\"Images\/zhihu.png\" alt=\"Zhihu\"  border=\"0\" height=\"25\"><\/a> &nbsp");
 // document.write("<a href=\"https:\/\/twitter.com\/chenxy346\/\"> <img src=\"Images\/twitter.png\" alt=\"Twitter\"  border=\"0\" height=\"25\"><\/a><br>");
 document.write("<\/td>");
